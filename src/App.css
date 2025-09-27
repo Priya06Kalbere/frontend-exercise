@@ -1,0 +1,32 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+}
+
+.logo {
+  height: 6rem;
+  padding: 0.25rem;
+  will-change: filter;
+  transition: filter 300ms;
+  background-color: white;
+  border-radius: 50%;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+} */
+
+:root {
+  --bg-start: #f0f4f8;
+  --bg-game: #6c21a5;
+  --bg-result: #531583;
+  --card-bg: #ffffff;
+  --button-primary: #3b82f6;
+  --button-hover: #2563eb;
+  --text-primary: #111827;
+  --achievement-unlocked: #bbf7d0;
+  --win-color: #16a34a;
+  --lose-color: #ef4444;
+}

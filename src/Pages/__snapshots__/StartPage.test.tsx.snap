@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`StartPage Component renders StartPage correctly (snapshot) 1`] = `
+<DocumentFragment>
+  <div
+    class="h-screen flex items-center justify-center bg-gray-100"
+    style="background-color: var(--bg-start);"
+  >
+    <div
+      class="w-full max-w-md bg-white rounded-lg border shadow-lg py-10 px-8"
+    >
+      <h1
+        class="text-2xl font-semibold text-center mb-8"
+      >
+        Start Game
+      </h1>
+      <label
+        class="block text-sm mb-2"
+      >
+        Player Name
+      </label>
+      <input
+        class="w-full p-2 mb-4 border rounded-md "
+        placeholder="Enter your name"
+        value=""
+      />
+      <label
+        class="block text-sm mb-2"
+      >
+        Board Size
+      </label>
+      <select
+        class="w-full p-2 mb-4 border rounded-md"
+      >
+        <option
+          value="2x2"
+        >
+          2x2
+        </option>
+        <option
+          value="3x4"
+        >
+          3x4
+        </option>
+        <option
+          value="4x4"
+        >
+          4x4
+        </option>
+        <option
+          value="4x5"
+        >
+          4x5
+        </option>
+      </select>
+      <label
+        class="block text-sm mb-2"
+      >
+        Difficulty
+      </label>
+      <div
+        class="flex gap-2 mb-6 relative"
+      >
+        <div
+          class="relative group flex-1"
+        >
+          <button
+            class="w-full py-2 px-3 rounded-md border text-sm font-medium bg-blue-500 text-white border-blue-700"
+            type="button"
+          >
+            Easy
+          </button>
+          <div
+            class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10"
+          >
+            <div
+              class="bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap"
+            >
+              Beginner-friendly - Moves: 36
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative group flex-1"
+        >
+          <button
+            class="w-full py-2 px-3 rounded-md border text-sm font-medium bg-gray-200 border-gray-400"
+            type="button"
+          >
+            Medium
+          </button>
+          <div
+            class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10"
+          >
+            <div
+              class="bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap"
+            >
+              Balanced challenge - Moves: 30
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative group flex-1"
+        >
+          <button
+            class="w-full py-2 px-3 rounded-md border text-sm font-medium bg-gray-200 border-gray-400"
+            type="button"
+          >
+            Hard
+          </button>
+          <div
+            class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10"
+          >
+            <div
+              class="bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap"
+            >
+              High difficulty - Moves: 24
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition}"
+        data-testid="start-button"
+      >
+        Start Game
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
