@@ -3,34 +3,35 @@
 exports[`StartPage Component renders StartPage correctly (snapshot) 1`] = `
 <DocumentFragment>
   <div
-    class="h-screen flex items-center justify-center bg-gray-100"
-    style="background-color: var(--bg-start);"
+    class="flex h-screen items-center justify-center bg-cover"
+    style="background-image: url("test-file-stub");"
   >
     <div
-      class="w-full max-w-md bg-white rounded-lg border shadow-lg py-10 px-8"
+      class="w-full max-w-md rounded-xl border border-pink-400/50 px-8 py-10 shadow-2xl"
+      style="background-color: rgba(255, 255, 255, 0.3);"
     >
       <h1
-        class="text-2xl font-semibold text-center mb-8"
+        class="mb-4 text-center text-5xl font-extrabold tracking-wider text-pink-900"
       >
-        Start Game
+        Memory Game
       </h1>
       <label
-        class="block text-sm mb-2"
+        class="mb-2 block text-base font-bold text-white"
       >
         Player Name
       </label>
       <input
-        class="w-full p-2 mb-4 border rounded-md "
+        class="focus:outline-none mb-4 w-full rounded-lg border bg-white/80 p-2 text-gray-800 transition-colors focus:border-pink-400 focus:ring-2 focus:ring-pink-400 border-gray-300"
         placeholder="Enter your name"
         value=""
       />
       <label
-        class="block text-sm mb-2"
+        class="mb-2 block text-base font-bold text-white"
       >
         Board Size
       </label>
       <select
-        class="w-full p-2 mb-4 border rounded-md"
+        class="focus:outline-none mb-6 w-full appearance-none rounded-lg border border-gray-300 bg-white/80 p-2 text-gray-800 transition-colors focus:border-pink-400 focus:ring-2 focus:ring-pink-400"
       >
         <option
           value="2x2"
@@ -54,65 +55,65 @@ exports[`StartPage Component renders StartPage correctly (snapshot) 1`] = `
         </option>
       </select>
       <label
-        class="block text-sm mb-2"
+        class="mb-2 block text-sm font-semibold text-white"
       >
         Difficulty
       </label>
       <div
-        class="flex gap-2 mb-6 relative"
+        class="relative mb-8 flex gap-3"
       >
         <div
-          class="relative group flex-1"
+          class="group relative flex-1"
         >
           <button
-            class="w-full py-2 px-3 rounded-md border text-sm font-medium bg-blue-500 text-white border-blue-700"
+            class="w-full rounded-lg px-3 py-2 text-sm font-semibold uppercase transition-all duration-200 bg-pink-700 text-white shadow-md"
             type="button"
           >
             Easy
           </button>
           <div
-            class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10"
+            class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 transform opacity-0 transition-opacity duration-200 group-hover:opacity-100"
           >
             <div
-              class="bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap"
+              class="whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white shadow-lg"
             >
               Beginner-friendly - Moves: 36
             </div>
           </div>
         </div>
         <div
-          class="relative group flex-1"
+          class="group relative flex-1"
         >
           <button
-            class="w-full py-2 px-3 rounded-md border text-sm font-medium bg-gray-200 border-gray-400"
+            class="w-full rounded-lg px-3 py-2 text-sm font-semibold uppercase transition-all duration-200 border border-gray-600 bg-gray-800 text-gray-200 hover:border-pink-500 hover:bg-gray-700 hover:text-pink-400"
             type="button"
           >
             Medium
           </button>
           <div
-            class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10"
+            class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 transform opacity-0 transition-opacity duration-200 group-hover:opacity-100"
           >
             <div
-              class="bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap"
+              class="whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white shadow-lg"
             >
               Balanced challenge - Moves: 30
             </div>
           </div>
         </div>
         <div
-          class="relative group flex-1"
+          class="group relative flex-1"
         >
           <button
-            class="w-full py-2 px-3 rounded-md border text-sm font-medium bg-gray-200 border-gray-400"
+            class="w-full rounded-lg px-3 py-2 text-sm font-semibold uppercase transition-all duration-200 border border-gray-600 bg-gray-800 text-gray-200 hover:border-pink-500 hover:bg-gray-700 hover:text-pink-400"
             type="button"
           >
             Hard
           </button>
           <div
-            class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10"
+            class="pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 transform opacity-0 transition-opacity duration-200 group-hover:opacity-100"
           >
             <div
-              class="bg-gray-800 text-white text-xs rounded py-1 px-2 shadow-lg whitespace-nowrap"
+              class="whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white shadow-lg"
             >
               High difficulty - Moves: 24
             </div>
@@ -120,7 +121,7 @@ exports[`StartPage Component renders StartPage correctly (snapshot) 1`] = `
         </div>
       </div>
       <button
-        class="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition}"
+        class="w-full rounded-lg bg-pink-700 py-2 text-lg font-bold uppercase text-white shadow-lg transition-colors duration-200 hover:bg-pink-800"
         data-testid="start-button"
       >
         Start Game
